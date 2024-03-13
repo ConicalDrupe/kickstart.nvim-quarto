@@ -154,6 +154,13 @@ vim.opt.scrolloff = 10
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- BOON Keymaps
+vim.keymap.set('i', 'jk', '<ESC>')
+vim.keymap.set('n', '<leader>nh', ':nohl<CR>')
+vim.keymap.set('n', 'x', '"_x')
+vim.keymap.set('n', '<S-d>', '<C-d>zz')
+vim.keymap.set('n', '<S-u>', '<C-u>zz')
+--
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
@@ -538,7 +545,7 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         -- gopls = {},
-        -- pyright = {},
+        pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
