@@ -1,5 +1,7 @@
 # kickstart.nvim
 
+export NVIM_APPNAME=.config/folder/to/search
+
 ## Introduction
 
 A starting point for Neovim that is:
